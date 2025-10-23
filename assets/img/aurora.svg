@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title>Aurora Social Logo</title>
+  <defs>
+    <linearGradient id="auroraGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9c6cff" />
+      <stop offset="100%" stop-color="#4dc4ff" />
+    </linearGradient>
+    <linearGradient id="auroraGradientSoft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(156, 108, 255, 0.25)" />
+      <stop offset="100%" stop-color="rgba(77, 196, 255, 0.25)" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="#060d24" />
+  <path d="M18 74c20-20 40-20 60 0s40 20 60 0" fill="none" stroke="url(#auroraGradientSoft)" stroke-width="12" stroke-linecap="round" />
+  <path d="M30 74c12-14 24-14 36 0s24 14 36 0" fill="none" stroke="url(#auroraGradient)" stroke-width="10" stroke-linecap="round" />
+  <circle cx="60" cy="44" r="10" fill="#ffffff" opacity="0.3" />
+  <circle cx="60" cy="44" r="6" fill="url(#auroraGradient)" />
+</svg>
