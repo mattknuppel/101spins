@@ -171,6 +171,14 @@ h3 {
     background: rgba(3, 23, 16, 0.92);
     box-shadow: 0 6px 14px rgba(2, 16, 11, 0.22);
   }
+
+  .site-header .logo {
+    color: rgba(255, 255, 255, 0.94);
+  }
+
+  .site-header .logo-image {
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.45));
+  }
 }
 
 .header-inner {
@@ -184,13 +192,24 @@ h3 {
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.65rem;
   font-weight: 600;
   font-size: 1.35rem;
 }
 
-.logo-icon {
-  font-size: 1.8rem;
+.logo-image {
+  width: clamp(44px, 5vw, 60px);
+  height: auto;
+  display: block;
+  border-radius: 50%;
+}
+
+.site-header .logo {
+  color: var(--text);
+}
+
+.site-header .logo-text {
+  font-weight: 700;
 }
 
 .main-nav {
@@ -887,6 +906,10 @@ h3 {
 
 .footer-logo {
   color: var(--white);
+}
+
+.footer-logo .logo-image {
+  width: clamp(52px, 7vw, 72px);
 }
 
 .footer-description {
