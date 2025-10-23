@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="jumboTitle jumboDesc">
+  <title id="jumboTitle">Jumbo88 logo</title>
+  <desc id="jumboDesc">Rounded rectangle with Jumbo88 neon lettering</desc>
+  <defs>
+    <linearGradient id="jumboBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#02152c" />
+      <stop offset="100%" stop-color="#011024" />
+    </linearGradient>
+    <linearGradient id="jumboNeon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7cffb1" />
+      <stop offset="100%" stop-color="#0be370" />
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="28" fill="url(#jumboBg)" />
+  <rect x="28" y="50" width="104" height="60" rx="20" fill="#051d3a" stroke="#0be370" stroke-width="4" />
+  <text x="80" y="92" fill="url(#jumboNeon)" font-family="'Lexend', 'Arial Black', sans-serif" font-size="36" font-weight="700" text-anchor="middle">JUMBO88</text>
+  <g fill="#0be370" opacity="0.6">
+    <circle cx="40" cy="64" r="3" />
+    <circle cx="120" cy="96" r="3" />
+    <circle cx="48" cy="102" r="3" />
+  </g>
+</svg>
