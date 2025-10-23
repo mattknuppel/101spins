@@ -661,6 +661,24 @@ h3 {
   }
 }
 
+@media (max-width: 600px) {
+  .section {
+    padding: 2.5rem 0;
+  }
+
+  .card {
+    padding: 1.4rem;
+  }
+
+  .offer-stack {
+    padding: 1.3rem;
+  }
+
+  .step {
+    padding: 1.5rem;
+  }
+}
+
 .steps-grid {
   display: grid;
   gap: 1.5rem;
