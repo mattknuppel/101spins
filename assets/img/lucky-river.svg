@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title>Lucky River Casino Logo</title>
+  <defs>
+    <linearGradient id="riverGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#54d0ff" />
+      <stop offset="100%" stop-color="#1e88e5" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="#051633" />
+  <path d="M20 80c20-12 40-12 60 0s40 12 60 0" fill="none" stroke="url(#riverGradient)" stroke-width="10" stroke-linecap="round" />
+  <circle cx="60" cy="45" r="18" fill="#fff" opacity="0.15" />
+  <path d="M42 47c6-14 30-20 36 0" stroke="#54d0ff" stroke-width="6" stroke-linecap="round" fill="none" />
+</svg>
