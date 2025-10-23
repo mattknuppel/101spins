@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="ccTitle ccDesc">
+  <title id="ccTitle">CasinoClick logo</title>
+  <desc id="ccDesc">Cursor clicking on a burst inside a navy square</desc>
+  <defs>
+    <linearGradient id="ccBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c1b30" />
+      <stop offset="100%" stop-color="#051020" />
+    </linearGradient>
+    <linearGradient id="ccClick" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffb31f" />
+      <stop offset="100%" stop-color="#ff7a18" />
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="24" fill="url(#ccBg)" />
+  <g transform="translate(40 40)">
+    <path d="M68 16c0-2.2-1.8-4-4-4h-4l3.5-3.5c1.6-1.6 1.6-4.1 0-5.7s-4.1-1.6-5.7 0L54 6V2c0-2.2-1.8-4-4-4s-4 1.8-4 4v4l-3.3-3.3c-1.6-1.6-4.1-1.6-5.7 0s-1.6 4.1 0 5.7L40 12h-4c-2.2 0-4 1.8-4 4s1.8 4 4 4h4l-3.5 3.5c-1.6 1.6-1.6 4.1 0 5.7s4.1 1.6 5.7 0L46 26v4c0 2.2 1.8 4 4 4s4-1.8 4-4v-4l3.3 3.3c1.6 1.6 4.1 1.6 5.7 0s1.6-4.1 0-5.7L56 20h4c2.2 0 4-1.8 4-4z" fill="url(#ccClick)" />
+    <path d="M16 24l16 48 8-20 20 20 8-8-20-20 20-8z" fill="#ffffff" />
+  </g>
+</svg>

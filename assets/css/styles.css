@@ -617,6 +617,24 @@ h3 {
   gap: 0.35rem;
 }
 
+.offer-meta {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.offer-meta-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+}
+
+.offer-meta-value {
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
 .bonus-amount {
   font-size: clamp(1.6rem, 1.25rem + 1.2vw, 1.95rem);
   font-weight: 600;
