@@ -624,7 +624,7 @@ h3 {
 
   .offer-rank {
     justify-self: start;
-    padding: 1rem 1.25rem;
+    padding: 0.75rem 1rem;
     display: inline-grid;
   }
 
@@ -657,7 +657,7 @@ h3 {
   }
 
   .bonus-amount {
-    font-size: 1.45rem;
+    font-size: clamp(1.3rem, 1.05rem + 1.6vw, 1.6rem);
   }
 }
 
