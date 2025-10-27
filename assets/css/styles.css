@@ -32,6 +32,9 @@
   --accent-light: var(--gold-200);
   --accent-secondary: var(--crimson-500);
   --accent-secondary-dark: var(--crimson-600);
+  --success: #2fbd6a;
+  --success-dark: #249759;
+  --success-tint: rgba(47, 189, 106, 0.14);
   --border: var(--surface-outline);
   --shadow: 0 20px 35px rgba(5, 34, 23, 0.16);
   --shadow-soft: 0 16px 36px rgba(4, 27, 20, 0.14);
@@ -478,6 +481,327 @@ h3 {
   content: '✔';
   color: var(--accent);
   margin-right: 0.5rem;
+}
+
+
+.offers-table {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: clamp(1rem, 1.6vw, 1.4rem);
+}
+
+.offer-row {
+  position: relative;
+  display: grid;
+  grid-template-columns:
+    minmax(0, 110px)
+    minmax(0, 1.35fr)
+    minmax(0, 1.05fr)
+    minmax(0, 1.15fr)
+    minmax(0, 0.85fr)
+    minmax(0, 0.65fr);
+  grid-template-areas: 'rank brand bonus features payments cta';
+  align-items: center;
+  gap: clamp(1rem, 1.8vw, 1.6rem);
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(11, 45, 33, 0.12);
+  box-shadow: 0 18px 38px rgba(4, 27, 20, 0.14);
+  padding: clamp(1.3rem, 2.6vw, 1.9rem) clamp(1.4rem, 3vw, 2.3rem);
+  overflow: hidden;
+}
+
+.offer-row::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), transparent 45%);
+  opacity: 0.6;
+}
+
+.offer-row > * {
+  position: relative;
+  z-index: 1;
+}
+
+.offer-row.is-top {
+  background: linear-gradient(135deg, rgba(47, 189, 106, 0.14), rgba(255, 255, 255, 0.96));
+  border-color: rgba(47, 189, 106, 0.45);
+  box-shadow: 0 24px 50px rgba(47, 189, 106, 0.28);
+}
+
+.offer-rank-col {
+  grid-area: rank;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  align-items: flex-start;
+}
+
+.offer-badge {
+  display: none;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.38rem 0.85rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--success), var(--success-dark));
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  box-shadow: 0 14px 28px rgba(47, 189, 106, 0.32);
+}
+
+.offer-row.is-top .offer-badge {
+  display: inline-flex;
+}
+
+.offer-row-number {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  aspect-ratio: 1;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(246, 196, 64, 0.18), rgba(11, 45, 33, 0.08));
+  color: var(--text-strong);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  box-shadow: 0 12px 24px rgba(4, 27, 20, 0.12);
+}
+
+.offer-row.is-top .offer-row-number {
+  background: linear-gradient(135deg, rgba(47, 189, 106, 0.4), rgba(13, 85, 52, 0.24));
+  color: var(--white);
+}
+
+.offer-brand-col {
+  grid-area: brand;
+  display: flex;
+  align-items: center;
+  gap: clamp(0.9rem, 2vw, 1.4rem);
+}
+
+.offer-brand-logo {
+  width: clamp(70px, 8vw, 92px);
+  height: clamp(70px, 8vw, 92px);
+  border-radius: 22px;
+  background: var(--white);
+  padding: clamp(0.5rem, 1.2vw, 0.85rem);
+  box-shadow: 0 18px 34px rgba(4, 27, 20, 0.16);
+  object-fit: contain;
+}
+
+.offer-brand-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.offer-review-link {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-secondary);
+  text-decoration: none;
+}
+
+.offer-review-link:hover,
+.offer-review-link:focus-visible {
+  text-decoration: underline;
+}
+
+.offer-brand-name {
+  margin: 0;
+  font-size: clamp(1.2rem, 1.05rem + 0.4vw, 1.45rem);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.offer-brand-note {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.offer-bonus-col {
+  grid-area: bonus;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.bonus-caption {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+}
+
+.bonus-amount {
+  font-size: clamp(1.7rem, 1.25rem + 1.4vw, 2.1rem);
+  font-weight: 700;
+  color: var(--success-dark);
+  line-height: 1.1;
+}
+
+.offer-feature-list {
+  grid-area: features;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+  color: var(--text-muted);
+}
+
+.offer-feature-list li {
+  position: relative;
+  padding-inline-start: 1.4rem;
+}
+
+.offer-feature-list li::before {
+  content: '';
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.35rem;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+  box-shadow: 0 6px 12px rgba(4, 27, 20, 0.12);
+}
+
+.offer-payments {
+  grid-area: payments;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+
+.payment-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(12, 45, 33, 0.08);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-subtle);
+}
+
+.offer-row.is-top .payment-chip {
+  background: var(--success-tint);
+  color: var(--success-dark);
+}
+
+.offer-cta {
+  grid-area: cta;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.6rem;
+}
+
+.offer-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--white);
+  background: linear-gradient(135deg, var(--success), var(--success-dark));
+  text-decoration: none;
+  box-shadow: 0 16px 30px rgba(47, 189, 106, 0.32);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.offer-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 20px 36px rgba(47, 189, 106, 0.36);
+}
+
+.offer-button:focus-visible {
+  transform: translateY(-1px);
+}
+
+.offer-button:active {
+  transform: translateY(0);
+  box-shadow: 0 12px 24px rgba(47, 189, 106, 0.26);
+}
+
+@media (max-width: 1100px) {
+  .offer-row {
+    grid-template-columns: minmax(0, 110px) minmax(0, 1.6fr) minmax(0, 1fr);
+    grid-template-areas:
+      'rank brand cta'
+      'rank bonus cta'
+      '. features payments';
+    align-items: start;
+  }
+
+  .offer-cta {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 900px) {
+  .offer-row {
+    grid-template-columns: minmax(0, 110px) minmax(0, 1fr);
+    grid-template-areas:
+      'rank brand'
+      'rank bonus'
+      '. features'
+      '. payments'
+      '. cta';
+  }
+}
+
+@media (max-width: 640px) {
+  .offer-row {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'rank'
+      'brand'
+      'bonus'
+      'features'
+      'payments'
+      'cta';
+    gap: 1rem;
+    padding: 1.3rem 1.4rem;
+  }
+
+  .offer-rank-col {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .offer-row-number {
+    width: 44px;
+    border-radius: 16px;
+  }
+
+  .offer-brand-col {
+    justify-content: flex-start;
+  }
+
+  .offer-cta {
+    align-items: stretch;
+  }
+
+  .offer-button {
+    width: 100%;
+  }
 }
 
 .offers-stack {
