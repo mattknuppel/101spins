@@ -1,0 +1,82 @@
+[
+  {
+    "slug": "lonestar",
+    "name": "LoneStar",
+    "review": "reviews/lonestar.html",
+    "visitUrl": "https://101spins.com/go/lonestar",
+    "bonus": "100,000 GC + 2.5 FREE SC",
+    "rating": 4.9
+  },
+  {
+    "slug": "realprize",
+    "name": "RealPrize",
+    "review": "reviews/realprize.html",
+    "visitUrl": "https://101spins.com/go/realprize",
+    "bonus": "100,000 Gold Coins + 2 Sweeps Coins",
+    "rating": 4.8
+  },
+  {
+    "slug": "ace",
+    "name": "ACE",
+    "review": "reviews/ace.html",
+    "visitUrl": "https://101spins.com/go/ace",
+    "bonus": "7,500 Gold Coins + 2.5 FREE SC",
+    "rating": 4.7
+  },
+  {
+    "slug": "rolla",
+    "name": "Rolla",
+    "review": "reviews/rolla.html",
+    "visitUrl": "https://101spins.com/go/rolla",
+    "bonus": "500,000 Gold Coins + 10 FREE SC",
+    "rating": 4.7
+  },
+  {
+    "slug": "casinoclick",
+    "name": "CasinoClick",
+    "review": "reviews/casinoclick.html",
+    "visitUrl": "https://101spins.com/go/casinoclick",
+    "bonus": "100,000 Gold Coins + 2 FREE SC",
+    "rating": 4.6
+  },
+  {
+    "slug": "mega-bonanza",
+    "name": "Mega Bonanza",
+    "review": "reviews/mega-bonanza.html",
+    "visitUrl": "https://101spins.com/go/megabonanza",
+    "bonus": "7,500 Gold Coins + 2.5 FREE SC",
+    "rating": 4.6
+  },
+  {
+    "slug": "luckystake",
+    "name": "LuckyStake",
+    "review": "reviews/luckystake.html",
+    "visitUrl": "https://101spins.com/go/luckystake",
+    "bonus": "7,500 Gold Coins + 2.5 Sweeps Coins",
+    "rating": 4.5
+  },
+  {
+    "slug": "jumbo88",
+    "name": "Jumbo88",
+    "review": "reviews/jumbo88.html",
+    "visitUrl": "https://101spins.com/go/jumbo88",
+    "bonus": "10,000 Gold Coins + 1 SC Free",
+    "rating": 4.4
+  },
+  {
+    "slug": "sweepnext",
+    "name": "SweepNext",
+    "review": "reviews/sweepnext.html",
+    "visitUrl": "https://101spins.com/go/sweepnext",
+    "bonus": "20,000 Gold Coins + 2 Free SC",
+    "rating": 4.4
+  },
+  {
+    "slug": "nolimitcoins",
+    "name": "NoLimitCoins",
+    "review": "reviews/nolimitcoins.html",
+    "visitUrl": "https://101spins.com/go/nolimitcoins",
+    "bonus": "110,000 Gold Coins + 1 Super Coin",
+    "rating": 4.3
+  }
+]

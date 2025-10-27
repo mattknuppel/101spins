@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="aceTitle aceDesc">
+  <title id="aceTitle">ACE logo</title>
+  <desc id="aceDesc">Stylized ACE wordmark with flag swoosh</desc>
+  <defs>
+    <linearGradient id="aceBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111a3b" />
+      <stop offset="100%" stop-color="#070d22" />
+    </linearGradient>
+    <linearGradient id="aceRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff4d4d" />
+      <stop offset="100%" stop-color="#f0002f" />
+    </linearGradient>
+    <linearGradient id="aceBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2b6cf6" />
+      <stop offset="100%" stop-color="#3c8dff" />
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="28" fill="url(#aceBg)" />
+  <g fill="#ffffff">
+    <path d="M38 104l18-48h14l18 48h-12l-3.3-9.4H53.7L50.5 104H38zm18-19.2h16.6L62 70.7h-0.3L56 84.8z" />
+    <path d="M90 56h12v48H90z" />
+    <path d="M110 104V56h12c13.2 0 20 7 20 17s-6.9 17-20.1 17H122v14H110zm12-24.4h10c6 0 9-3.1 9-7.6 0-4.4-3.1-7.6-9-7.6h-10v15.2z" />
+  </g>
+  <path d="M52 50L90 38l28 12-28 12z" fill="url(#aceBlue)" opacity="0.75" />
+  <path d="M90 38l44 12-44 12z" fill="url(#aceRed)" opacity="0.75" />
+</svg>
