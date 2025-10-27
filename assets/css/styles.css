@@ -579,9 +579,6 @@ h3 {
     linear-gradient(145deg, rgba(11, 45, 33, 0.12), rgba(255, 255, 255, 0.35));
   display: grid;
   place-items: center;
-  font-weight: 700;
-  font-size: 1.35rem;
-  color: var(--text);
   border: 1px solid rgba(11, 45, 33, 0.12);
   overflow: hidden;
   box-shadow: 0 16px 30px rgba(4, 27, 20, 0.15);
@@ -591,7 +588,35 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 0.85rem;
+  padding: 0.75rem;
+  transition: opacity 0.3s ease;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 18px;
+  box-shadow: inset 0 0 0 1px rgba(11, 45, 33, 0.08);
+}
+
+.offer-logo img.is-loading {
+  animation: logoPulse 1.6s ease-in-out infinite;
+  opacity: 0.55;
+}
+
+.offer-logo img[data-logo-loaded='true'] {
+  opacity: 1;
+}
+
+.offer-logo img[data-logo-missing='true'] {
+  opacity: 0.6;
+  filter: grayscale(1);
+}
+
+@keyframes logoPulse {
+  0%,
+  100% {
+    background-color: rgba(255, 255, 255, 0.28);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.45);
+  }
 }
 
 .offer-rating {
@@ -615,6 +640,24 @@ h3 {
 .offer-bonus {
   display: grid;
   gap: 0.35rem;
+}
+
+.offer-meta {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.offer-meta-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+}
+
+.offer-meta-value {
+  font-weight: 600;
+  color: var(--text-muted);
 }
 
 .bonus-amount {
