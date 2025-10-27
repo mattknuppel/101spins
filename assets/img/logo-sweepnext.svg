@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="snTitle snDesc">
+  <title id="snTitle">SweepNext logo</title>
+  <desc id="snDesc">Glowing SweepNext wordmark with orbit graphic</desc>
+  <defs>
+    <linearGradient id="snBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#040b2c" />
+      <stop offset="100%" stop-color="#060c1d" />
+    </linearGradient>
+    <linearGradient id="snWord" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#63ff8c" />
+      <stop offset="50%" stop-color="#3bd4ff" />
+      <stop offset="100%" stop-color="#8a6bff" />
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="28" fill="url(#snBg)" />
+  <ellipse cx="80" cy="88" rx="60" ry="26" fill="none" stroke="#2fe3ff" stroke-width="4" opacity="0.5" />
+  <text x="80" y="88" fill="url(#snWord)" font-family="'Lexend', 'Arial Black', sans-serif" font-size="32" font-weight="700" text-anchor="middle">SWEEPNEXT</text>
+  <circle cx="134" cy="88" r="8" fill="#63ff8c" />
+  <circle cx="26" cy="88" r="5" fill="#3bd4ff" opacity="0.8" />
+</svg>
